@@ -1,0 +1,10 @@
+construct a pushdown automata for palindrome.
+construct a deterministic pushdown automata to accept strings in which there are more numbers of a's than b's. []
+
+a^2n b^n []
+
+a^n b^2n	n>=1 []
+
+a^n b^m c^m d^numbers	m,n>=1
+
+a^n b^m+n a^m 	=> a^n b^n b^m a^m []
