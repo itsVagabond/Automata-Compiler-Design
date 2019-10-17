@@ -5,7 +5,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int STACK[100], POINTER = -1;
+int ST[100], POINTER = -1;
 
 void stateStatus(int *state, int curr){
     *state = curr;
@@ -19,12 +19,12 @@ void notAccepted(){
 
 void push(char var){
     if(POINTER >= 100){
-        printf("\nSTACK OVERFLOW");
+        printf("\nST OVERFLOW");
         exit(-1);
     }
 
 
-    STACK[++POINTER] = var;
+    ST[++POINTER] = var;
 }
 
 void pop(){
@@ -32,7 +32,7 @@ void pop(){
         notAccepted();
     }
 
-    STACK[POINTER--] = '@';
+    ST[POINTER--] = '@';
 }
 
 void language_check(char *arr, int num, int *state){
