@@ -67,6 +67,8 @@ void output_array(int *arr, int num){
     printf("\n\n");
 }
 
+// Main Function
+
 void main(){
     int state, num;
 
